@@ -12,8 +12,8 @@
 #define VK_PLATFORM_H_
 
 #ifdef __cplusplus
-extern "C"
-{
+//extern "C"
+//{
 #endif // __cplusplus
 
 /*
@@ -73,12 +73,12 @@ extern "C"
         typedef signed   __int64 int64_t;
         typedef unsigned __int64 uint64_t;
     #else
-        #include <stdint.h>
+		#include <stdint.h>
     #endif
 #endif // !defined(VK_NO_STDINT_H)
 
 #ifdef __cplusplus
-} // extern "C"
+//}  extern "C"
 #endif // __cplusplus
 
 #endif

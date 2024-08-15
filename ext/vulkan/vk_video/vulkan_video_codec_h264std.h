@@ -14,13 +14,13 @@
 
 
 #ifdef __cplusplus
-extern "C" {
+//extern "C" {
 #endif
 
 
 
 #define vulkan_video_codec_h264std 1
-#include <stdint.h>
+//#include <stdint.h>
 #define STD_VIDEO_H264_CPB_CNT_LIST_SIZE  32
 #define STD_VIDEO_H264_SCALING_LIST_4X4_NUM_LISTS 6
 #define STD_VIDEO_H264_SCALING_LIST_4X4_NUM_ELEMENTS 16
@@ -304,7 +304,7 @@ typedef struct StdVideoH264PictureParameterSet {
 
 
 #ifdef __cplusplus
-}
+//}
 #endif
 
 #endif
