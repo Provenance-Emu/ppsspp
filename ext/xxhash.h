@@ -77,6 +77,8 @@ XXH32        6.8 GB/s            6.0 GB/s
 */
 
 #include "ppsspp_config.h"
+#include <stdint.h>
+
 #if defined (__cplusplus)
 extern "C" {
 #endif
@@ -358,7 +360,6 @@ typedef uint32_t XXH32_hash_t;
 #elif !defined (__VMS) \
   && (defined (__cplusplus) \
   || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) /* C99 */) )
-#   include <stdint.h>
     typedef uint32_t XXH32_hash_t;
 
 #else
@@ -656,7 +657,6 @@ typedef uint64_t XXH64_hash_t;
 #elif !defined (__VMS) \
   && (defined (__cplusplus) \
   || (defined (__STDC_VERSION__) && (__STDC_VERSION__ >= 199901L) /* C99 */) )
-#  include <stdint.h>
    typedef uint64_t XXH64_hash_t;
 #else
 #  include <limits.h>
