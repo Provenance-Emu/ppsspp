@@ -262,9 +262,9 @@ static const char *device_name_blacklist[] = {
 #ifndef _WIN32
 static const char *so_names[] = {
 #if PPSSPP_PLATFORM(IOS)
-	"@executable_path/Frameworks/libMoltenVK.dylib",
+	"@executable_path/Frameworks/MoltenVK.framework/MoltenVK",
 #elif PPSSPP_PLATFORM(MAC)
-	"@executable_path/../Frameworks/libMoltenVK.dylib",
+	"@executable_path/../Frameworks/MoltenVK.framework/MoltenVK",
 #else
 	"libvulkan.so",
 #if !defined(__ANDROID__)
